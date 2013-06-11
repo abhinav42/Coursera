@@ -102,6 +102,38 @@ strong{font-weight:700 !important}
    color: white;
 }
 
+.bcircle:hover {
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
+	filter: alpha(opacity=99);
+	-webkit-box-shadow: 2px 2px 10px rgba(26,188,156, 0.4), 0px 0px 0px 0px #fedc3f inset,;
+	-moz-box-shadow: 2px 2px 10px rgba(26,188,156, 0.4), 0px 0px 0px 0px #fedc3f inset ;
+	box-shadow: 2px 2px 10px rgba(26,188,156, 0.4), 0px 0px 0px 0px #fedc3f inset;
+	color: #fff;
+	
+	background: #1abc9c; /* fallback for non-supporting browsers */
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+}
+
+.hover:hover{
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
+	filter: alpha(opacity=99);
+	
+	color: #1abc9c;
+	text-shadow: 0px 0px 2px rgba(120,155,179,0.4);
+	
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+
 .goi{max-width: 250px;
 height: auto;
 float: left;
@@ -121,6 +153,24 @@ float: left;
 margin-left: 8px;
 }
 
+.access:hover,rounded{
+opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
+	filter: alpha(opacity=99);
+	-webkit-box-shadow: 2px 2px 10px rgba(26,188,156, 0.1), 0px 0px 0px 0px #1abc9c inset, 0px 0px 20px 3px rgba(26,188,156,0.2);
+	-moz-box-shadow: 2px 2px 10px rgba(26,188,156, 0.1), 0px 0px 0px 0px #1abc9c inset, 0px 0px 20px 3px rgba(26,188,156,0.2);
+	box-shadow: 2px 2px 10px rgba(26,188,156, 0.1), 0px 0px 0px 0px #1abc9c inset, 0px 0px 20px 3px rgba(26,188,156,0.2);
+	color: #1abc9c;
+	
+	background: #1abc9c; /* fallback for non-supporting browsers */
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	border-radius: 35px;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+}
 
 
 form input[type="text"],.form input[type="text"],form input[type="password"],.form input[type="password"],form input[type="date"],.form input[type="date"],form input[type="datetime"],.form input[type="datetime"],form input[type="email"],.form input[type="email"],form input[type="number"],.form input[type="number"],form input[type="search"],.form input[type="search"],form input[type="tel"],.form input[type="tel"],form input[type="time"],.form input[type="time"],form input[type="url"],.form input[type="url"],form select,.form select,form textarea,.form textarea{display:inline-block;width:100%;padding:.5em;margin:.1em 0 .25em 0;font-family:inherit;font-size:inherit;-webkit-appearance:none;-webkit-user-select:text;-webkit-font-smoothing:antialiased;}
