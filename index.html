@@ -28,10 +28,13 @@
 </div>
 <div class="column_4  padding ">
     <ul class="hul">
-        <li><a href="http://www.india.gov.in"> <img src="images/access.png" class="ul access rounded"></a></li>
-        <li><a href="http://www.india.gov.in"> <img src="images/audio.png" class="ul access"></a></li>
+        <li><a href="#"> <img src="images/access.png" class="ul access rounded"></a></li>
+        <li><a href="http://webanywhere.cs.washington.edu/wa.php"> <img src="images/audio.png" class="ul access"></a></li>
         <li><a href="dindex.html"> <img src="images/contrast.png" class="ul access"></a></li>
-        <li><a href="http://www.india.gov.in"> <img src="images/magnify.png" class="ul access"></a></li>
+        <li><a href="#"  class="resetFont"> <img src="images/reset.png" class="ul access"></a></li>
+        <li><a href="#"  class="increaseFont"> <img src="images/magnify.png" class="ul access"></a></li>
+     
+
 </ul>
 </div>
 </div>
@@ -131,6 +134,33 @@
 
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="js/tuktuk.js"></script>
+    <script type="text/javascript" language="javascript">
+$(document).ready(function(){
+  // Reset Font Size
+  var originalFontSize = $('body').css('font-size');
+  $(".resetFont").click(function(){
+  $('body').css('font-size', originalFontSize);
+  });
+  // Increase Font Size
+  $(".increaseFont").click(function(){
+    var currentFontSize = $('body').css('font-size');
+    var currentFontSizeNum = parseFloat(currentFontSize, 10);
+    var newFontSize = currentFontSizeNum*1.2;
+    $('body').css('font-size', newFontSize);
+    return false;
+  });
+ 
+  $(".increaseFont").click(function(){
+    var currentimageSize = $('access').css('max-width');
+    var currentimageSizeNum = parseFloat(currentimageSize, 10);
+    var newimageSize = currentimageSizeNum*1.2;
+    $('access').css('max-width', newimageSize);
+    return false;
+  });
+
+});
+</script>
+
 
 
 
